@@ -1,0 +1,84 @@
+.BuscarMR{
+  padding-top: 20px;
+  padding-bottom: 81px; 
+}
+
+.TituloBuscar{
+  font-family: 'Chewy', cursive;
+  color: #1900FF;
+  text-align: center;
+  margin-bottom: 50px;
+  align-items: center;
+}
+
+.CorreoE{
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+
+.BuscarM{
+  width: 50%;
+  font-family: 'Bree Serif', serif;
+  display: block;
+  margin: auto;
+  align-items: center;
+  display: flex;
+}
+
+.BusMa{
+  text-align: left;
+}
+
+.iconoUsuario{
+  background-color: #FEE5FF;
+  border: #FEE5FF;
+  text-align: right;
+  display: block;
+  height:50px ;
+  width: 70px;
+  font-size: 10px;
+  margin-left: 0px;
+}
+.FlechaAtras{
+  background-color: #FEE5FF;
+  border: #FEE5FF;
+  height: 40px;
+  width: 50px;
+  float: left;
+}
+
+.img{
+  width: 20px;
+}
+
+.icono{
+  width: 40px;
+  height: 40px;
+}
+
+.TituloResultados{
+  font-family: 'Bree Serif', serif;
+  padding-top: 40px;
+  font-size: 30px;
+  color: #030F59;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.Resultados{
+  width: 250px;
+  height: 30px;
+  border-radius: 10px;
+  border: 1px solid;
+  text-align: left;
+  font-family: 'Bree Serif', serif;
+  display: block;
+  margin: auto;
+  padding-bottom: 30px;
+  margin-top: 25px;  
+}
+
+.vilma{
+  color: grey;
+}

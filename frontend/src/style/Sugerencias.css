@@ -1,0 +1,112 @@
+.Sugerencias{
+  padding-top: 20px;
+  padding-bottom: 63px;
+}
+
+.TituloSuge{
+  font-family: 'Chewy', cursive;
+  font-size: 50px;
+  color: #1900FF;
+  text-align: center;
+  margin-bottom: 70px;
+  align-items: center;
+}
+
+.Elte{
+  font-size: 25px;
+  font-family: 'Chewy', cursive; 
+}
+
+.Come{
+  width: 50%;
+  font-family: 'Bree Serif', serif;
+  display: block;
+  margin: auto;
+ 
+  
+ 
+}
+
+.Flechis{
+  height: 20px;
+  width: 20px;
+  background-color: #FEE5FF;
+  border: #FEE5FF;
+  position: center;
+}
+
+.form-control2{
+  width: 200px;
+  height: 100px;
+  display:block;
+  margin: auto;
+  margin-bottom: 50px;
+  text-align: center;
+  background-color: #D1F4FA;
+  border: none;
+  
+}
+
+.Prin{
+  text-align: center;
+}
+
+.Let{
+  margin-top: 30px;
+  font-size: 28px;
+  text-align: center;
+  font-family: 'Chewy', cursive;
+}
+
+.Cali{
+  display: block;
+  margin: auto;
+  margin-top: 40px;
+  width: 150px;
+  height: 50px;
+  margin-bottom: 42px;
+}
+
+.Enviar{
+  background-color: #D3B4FC;
+  color: black;
+  font-family: 'Bree Serif', serif;
+  text-align: center;
+  border-color: #D3B4FC;
+  display: block;
+  margin: auto;
+  margin-top: 40px;
+  width: 100px;
+  height: 40px;
+}
+
+.Manos{
+  align-items: center;
+  display: flex;
+  padding-left: 120px;
+  padding-right: 150px;
+}
+
+.Mani1{
+  height: 100px;
+  width: 100px;
+  margin-bottom: 15px;
+  margin-top: 50px;
+  background-color: #FEE5FF; 
+  font-size: 10px;
+  border: #FEE5FF;
+  margin: auto;
+  align-items: center;
+}
+
+.Mani2{
+  height: 100px;
+  width: 100px;
+  margin-bottom: 15px;
+  margin-top: 50px;
+  background-color: #FEE5FF;  
+  font-size: 15px;
+  border: #FEE5FF;
+  margin: auto;
+  align-items: center;
+}

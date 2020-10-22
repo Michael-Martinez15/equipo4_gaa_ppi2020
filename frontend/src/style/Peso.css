@@ -1,0 +1,85 @@
+.Peso3{
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+.TituloPeso{
+  background-color: #FEE5FF;
+  font-family: 'Chewy', cursive;
+  color: #1900FF;
+  text-align: center;
+  margin-bottom: 20px;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+}
+
+.FlechaAtras{
+  background-color: #FEE5FF;
+  border: #FEE5FF;
+  height: 40px;
+  width: 50px;
+  float: left;
+}
+
+.Logp{
+  width: 70px;
+  height: 55px;;
+}
+
+.PesoMes{
+  width: 50%;
+  font-family: 'Bree Serif', serif;
+  display: block;
+  margin: auto;
+  align-items: center;
+  display: flex;
+}
+
+.form-control1{
+  width: 55%;
+  height: 32px;
+  font-size: 15px;
+  border: 1px solid rgb(206, 206, 206);
+  border-radius: 5px;
+}
+
+.GuardarP{
+  margin: 0px 0px 0px 15px;
+  font-size: 15px;
+  background-color: #D3B4FC;
+  border-color: #D3B4FC;
+  font-family: 'Bree Serif', serif;
+  text-align: center;
+}
+
+.PesT{
+  padding-top: 20px;
+  font-size: 20px;
+}
+
+.LogoModal{
+  width: 110px;
+  height: 85px;
+  display: block;
+  margin: auto;
+  margin-right: 0px;
+}
+
+.textoModal{
+  font-family: 'Bree Serif', serif;
+  font-size: 20px;
+}
+
+.botonModal{
+  color: black;
+  background-color: #fdaec9;
+  box-shadow: 1px 2px 2px 0px #000000;
+}
+
+
+
+
+ 
+
+ 

@@ -1,0 +1,113 @@
+.container{
+  padding-bottom: 30px;
+}
+
+.table{
+  margin: 0 auto 20px;
+  background-color: #e6d3ff;
+}
+
+.ca{
+  position: sticky;
+  top: 0px;
+}
+
+.TituloCalendario{
+  background-color: #FEE5FF;
+  font-family: 'Chewy', cursive;
+  color: #1900FF;
+  text-align: center;
+  margin-bottom: 40px;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.FechaCita{
+  width: 80%;
+  font-family: 'Bree Serif', serif;
+  padding-top: 30px;
+  display: block;
+  margin: auto;
+  display: flex;
+}
+
+.DescripcionCita{
+  width: 85%;
+  font-family: 'Bree Serif', serif;
+  padding-top: 10px;
+  display: block;
+  margin: auto;
+  display: flex;
+}
+
+.Fcita{
+  padding-right: 20px;
+}
+
+.today {
+  background-color: #b5a8ffc4;
+  color: #fff;
+}
+
+.in-prev-month,
+.in-next-month {
+  opacity: 0.5;
+}
+
+.Calendario2{
+  height: 50px;
+  width: 50px;
+}
+
+.botonmes{
+  padding-left: 30%;
+  display: block;
+  margin: auto;
+  align-items: center;
+  display: flex;
+  font-family: 'Bree Serif', serif;
+  border:none;
+}
+
+.bot{
+  border: none;
+  border-bottom: solid black;
+  background-color: #FEE5FF;
+}
+
+.Agregar{
+  background-color: #D3B4FC;
+  border-color: #FEE5FF;
+  color: black;
+  width: 150px;
+  height: 40px;
+  font-size: 17px;
+  font-family: 'Bree Serif', serif;
+  display: block;
+  margin: auto;
+}
+
+.modalFecha{
+  font-family: 'Bree Serif', serif;
+  font-size: 25px;
+  text-align: center;
+}
+
+.LogoModalC{
+  width: 110px;
+  height: 85px;
+  margin: auto;
+  margin-right: 0px;
+  margin-left: 120px;
+}
+
+.textoModal{
+  font-family: 'Bree Serif', serif;
+  font-size: 20px;
+}
+
+.botonModal{
+  color: black;
+  background-color: #fdaec9;
+  box-shadow: 1px 2px 2px 0px #000000;
+}

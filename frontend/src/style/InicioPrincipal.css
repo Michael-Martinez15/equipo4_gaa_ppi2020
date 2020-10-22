@@ -1,0 +1,75 @@
+.InicioPrincipal{
+  padding-top: 20px;
+  padding-bottom: 35px;
+}
+
+.TituloPrincipal{
+  font-family: 'Chewy', cursive;
+  color: #1900FF;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.Logo{
+  width: 70px;
+  height: 55px;;
+}
+
+.Espacio2{
+  align-items: center;
+  display: flex;
+}
+
+.ComoFunciona{
+  background-color: #D3F5FC;
+  color: black;
+  font-family: 'Chewy', cursive;
+  text-align: center;
+  border-color: #D3F5FC;
+  display: block;
+  margin: auto;
+  margin-top: 70px;
+  border-radius: 50%;
+  width: 170px;
+  height: 150px;
+}
+
+.Calendario{
+  background-color: #FDD6C0;
+  color: black;
+  font-family: 'Chewy', cursive;
+  text-align: center;
+  border-color: #FDD6C0;
+  display: block;
+  margin: auto;
+  border-radius: 50%;
+  width: 170px;
+  height: 150px;
+}
+
+.Peso{
+  background-color: #A9FAB7;
+  color: black;
+  font-family: 'Chewy', cursive;
+  text-align: center;
+  border-color: #A9FAB7;
+  display: block;
+  margin: auto;
+  border-radius: 50%;
+  width: 170px;
+  height: 150px;
+}
+
+.Sugerencias1{
+  background-color: #D3B4FC;
+  color: black;
+  font-family: 'Chewy', cursive;
+  text-align: center;
+  border-color: #D3B4FC;
+  display: block;
+  margin: auto;
+  margin-top: 40px;
+  width: 190px;
+  height: 50px;
+}
+

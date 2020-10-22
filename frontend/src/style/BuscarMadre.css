@@ -1,0 +1,50 @@
+.BuscarMadre{
+  padding-top: 20px;
+  padding-bottom: 434px; 
+}
+
+.TituloBuscar{
+  font-family: 'Chewy', cursive;
+  color: #1900FF;
+  text-align: center;
+  margin-bottom: 70px;
+  align-items: center;
+}
+
+.FlechaAtras{
+  background-color: #FEE5FF;
+  border: #FEE5FF;
+  height: 40px;
+  width: 50px;
+  float: left;
+}
+
+.CorreoE{
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+
+.BuscarM{
+  width: 60%;
+  font-family: 'Bree Serif', serif;
+  display: block;
+  margin: auto;
+  align-items: center;
+  display: flex;
+}
+
+.BusMa{
+  text-align: left;
+}
+
+.iconoUsuario{
+  background-color: #FEE5FF;
+  border: #FEE5FF;
+  text-align: right;
+}
+
+.icono{
+  width: 40px;
+  height: 40px;
+}

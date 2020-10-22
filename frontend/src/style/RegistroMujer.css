@@ -1,0 +1,61 @@
+.RegistroMujer{
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.TituloMujer{
+  background-color: #FEE5FF;
+  font-family: 'Chewy', cursive;
+  color: #1900FF;
+  text-align: center;
+  margin-bottom: 0px;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+}
+
+.FlechaAtras{
+  background-color: #FEE5FF;
+  border: #FEE5FF;
+  height: 40px;
+  width: 50px;
+  float: left;
+}
+
+.form-control{
+  display: block;
+  height: 32px;
+}
+
+.Casillas{
+  width: 50%;
+  height: 98px;
+  font-size: 20px;
+  font-family: 'Bree Serif', serif;
+  display: block;
+}
+
+
+.Boton{
+  background-color: #D3B4FC;
+  border-color: #FEE5FF;
+  color: black;
+  width: 150px;
+  height: 40px;
+  font-size: 17px;
+  font-family: 'Bree Serif', serif;
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.T{
+  font-size: 17px;
+  margin-bottom: 5px;
+  margin-top: 0px;
+  padding-top: 0p
+}
+
+.mt-5{
+  text-align: center;
+}

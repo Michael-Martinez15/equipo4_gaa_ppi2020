@@ -1,0 +1,120 @@
+.Perfil1{
+  padding-top: 20px;
+  padding-bottom: 36px;
+}
+
+.TituloPerfil{
+  font-family: 'Chewy', cursive;
+  color: #1900FF;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.form-control2{
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.Vil{
+  width: 80px;
+  height: 55px;
+  display: block;
+  margin: auto;
+  text-align: center;
+  font-family: 'Bree Serif', serif;
+  font-size: 15px;
+}
+
+.imgUsuario{
+  width: 90px;
+  height: 70px;
+  display: block;
+  margin: auto;
+}
+
+.Correov{
+  display: block;
+  margin: auto;
+  text-align: center;
+  font-family: 'Bree Serif', serif;
+  font-size: 15px;
+}
+
+.Desc{
+  padding-top: 50px;
+  width: 50%;
+  font-family: 'Bree Serif', serif;
+  display: block;
+  margin: auto;
+  align-items: center;
+  display: flex;
+  font-size: 20px;
+}
+
+.CitaM{
+  font-family: 'Bree Serif', serif;
+  display: block;
+  margin: auto;
+  border: none;
+}
+
+.form-control3{
+  background-color: #FEE5FF;
+  font-family: 'Bree Serif', serif;
+  width: 215px;
+  display: block;
+  margin: auto;
+  margin-bottom: 40px;
+  border: none;
+  border-bottom: 6px solid ;
+  border-bottom-color:  rgb(173, 114, 250);
+}
+
+.EnviarB{
+  width: 90%
+}
+
+.Enviar2{
+  background-color: #D3B4FC;
+  color: black;
+  font-family: 'Bree Serif', serif;
+  text-align: center;
+  border-color: #D3B4FC;
+  display: block;
+  margin: auto;
+  margin-top: 60px;
+  width: 100px;
+  height: 40px;
+  margin-right: 0px;
+}
+
+.Gmail{
+  display: flex;
+}
+
+.LogoGmail{
+  width: 25px;
+  height: 20px;;
+}
+
+.TGmail{
+  font-family: 'Bree Serif', serif;
+}
+
+.LogoMas{
+  width: 25px;
+  height: 20px;
+  ;
+}
+.btnMas{
+float: right;
+border: none;
+}
+
+
+
+.LogoPrin{
+  width: 40px;
+  height: 32px;;
+}

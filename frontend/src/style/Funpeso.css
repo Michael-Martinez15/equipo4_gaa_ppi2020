@@ -1,0 +1,28 @@
+.Funpeso{
+  padding-top: 30px;
+  padding-bottom: 210px;
+}
+
+.Princ{
+  font-family: 'Chewy', cursive;
+  color: #1900FF;
+  text-align: center;
+  font-size: 45px;
+  align-items: center;
+}
+
+.FlechaAtras{
+  background-color: #FEE5FF;
+  border: #FEE5FF;
+  height: 40px;
+  width: 50px;
+  float: left;
+}
+
+
+.infoP{
+  font-family: 'Bree Serif', cursive;
+  text-align: center;
+  font-size: 25px;
+  padding-top: 50px;
+}

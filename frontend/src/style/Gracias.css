@@ -1,0 +1,43 @@
+.Gracias{
+  padding-top: 50px;
+  padding-bottom: 65px;
+}
+
+.Tenks{
+  font-family: 'Chewy', cursive;
+  color: #1900FF;
+  text-align: center;
+  font-size: 35px;
+}
+
+.Thanks{
+  font-family: 'Chewy', cursive;
+  color: #1900FF;
+  text-align: center;
+  font-size: 35px;
+  padding-bottom: 30px;
+}
+
+.Continuar{
+  width: 190px;
+  display: block;
+  margin: auto;
+  margin-bottom: 30px;
+  margin-top: 65px;
+  background-color: #FEE5FF;  
+  color: black;
+  font-family: 'Bree Serif', serif;
+  font-size: 20px;
+  font-weight: bold;
+  border: #FEE5FF;
+  border-bottom: 6px solid;
+  border-bottom-color:  rgb(173, 114, 250);
+}
+
+.LogoG{
+  display: block;
+  margin: auto;
+  height: 250px;
+  margin-top: 40px;
+  margin-bottom: 50px;
+}

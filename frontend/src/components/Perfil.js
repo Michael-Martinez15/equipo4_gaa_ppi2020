@@ -52,7 +52,7 @@ const Perfil = (props) => {
           <div className="modal-content">
             <div className="modal-header">
                <div className="Gmail">
-               <img className="LogoGmail" src="../img/Gmail.jpeg" alt="" /><p className="TGmail"> Gmail </p>
+               <img className="LogoGmail" src="../img/Gmail.jpg" alt="" /><p className="TGmail"> Gmail </p>
                </div>
             </div>
             <div className="modal-body">

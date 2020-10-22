@@ -36,3 +36,6 @@ const InicioObstetra = (props) => {
     </div>
   );
 };
+
+
+export default withRouter (InicioObstetra);

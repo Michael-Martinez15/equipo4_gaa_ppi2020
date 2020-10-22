@@ -1,0 +1,50 @@
+.InicioMujer{
+  padding-top: 20px;
+  padding-bottom: 16px;
+}
+
+.TituloInicioM{
+  font-family: 'Chewy', cursive;
+  color: #1900FF;
+  text-align: center;
+  margin-bottom: 25px;
+  align-items: center;
+}
+
+.FlechaAtras{
+  background-color: #FEE5FF;
+  border: #FEE5FF;
+  height: 40px;
+  width: 50px;
+  float: left;
+}
+
+.form-control{
+  display: block;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+.Casillas{
+  width: 50%;
+  font-size: 20px;
+  font-family: 'Bree Serif', serif;
+  display: block;
+  margin: auto;
+}
+
+.Boton{
+  background-color: #D3B4FC;
+  border-color: #FEE5FF;
+  color: black;
+  width: 150px;
+  height: 40px;
+  font-size: 17px;
+  font-family: 'Bree Serif', serif;
+  display: block;
+  margin: auto; 
+}
+
+.mt-5{
+  text-align: center;
+}

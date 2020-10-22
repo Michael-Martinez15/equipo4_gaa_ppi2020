@@ -1,0 +1,45 @@
+.Bienvenida{
+  padding-bottom: 17px;
+}
+
+.Bienve{
+  font-family: 'Abril Fatface', cursive;
+  text-align: center;
+  font-size: 25px;
+  padding-top: 115px;
+  padding-bottom: 50px;
+}
+
+.Nine{
+  font-family: 'Chewy', cursive;
+  color: #1900FF;
+  text-align: center;
+  font-size: 35px;
+}
+
+.SiguienteB{
+  width: 90%
+}
+
+.Siguiente{
+  text-align: center;
+  background-color: #D3B4FC;
+  border-color: #FEE5FF;
+  color: black; 
+  font-family: 'Bree Serif', serif;
+  display: block;
+  margin: auto;
+  height:40px ;
+  width: 120px;
+  font-size: 18px;
+  margin-bottom: 38px;
+  margin-right: 0px;
+}
+
+.Logito{
+  display: block;
+  margin: auto;
+  height: 200px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}

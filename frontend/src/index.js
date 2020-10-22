@@ -1,13 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
 
+import Ppicontainer from "../src/container/Ppicontainer";
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+
+    <Ppicontainer />,
+    
   document.getElementById('root')
 );
 

@@ -1,0 +1,57 @@
+.ComoObstetra{
+  padding-top: 20px;
+  padding-bottom: 109px;
+}
+
+.TituloObstetra{
+  font-family: 'Chewy', cursive;
+  color: #1900FF;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.FlechaAtras{
+  background-color: #FEE5FF;
+  border: #FEE5FF;
+  height: 40px;
+  width: 50px;
+  float: left;
+}
+
+.LogoPrincipal{
+  display: block;
+  margin: auto;
+}
+
+.Espacio2{
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.Registro{
+  background-color: #D3B4FC;
+  border-color: #FEE5FF;
+  color: black;
+  width: 228px;
+  height: 40px;
+  font-size: 15px;
+  font-family: 'Bree Serif', serif;
+  display: block;
+  margin: auto;
+}
+
+.InicioSesión{
+  background-color: #D3B4FC;
+  border-color: #FEE5FF;
+  color: black;
+  width: 228px;
+  height: 40px;
+  font-size: 15px;
+  font-family: 'Bree Serif', serif;
+  display: block;
+  margin: auto;
+}
+
+.img{
+  width: 20px;
+}

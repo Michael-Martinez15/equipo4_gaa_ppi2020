@@ -8,7 +8,6 @@ const mysqlConnection = mysql.createConnection(
         multipleStatements: true
     }
 ); //Fin createConnection
-//hola
 
 mysqlConnection.connect(function(err) {
         //Si hay un error entonces

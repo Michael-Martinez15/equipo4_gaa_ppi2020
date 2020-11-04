@@ -26,7 +26,7 @@ router.post('/usuario', (req, res) => {
     let nuevoUsuario = `INSERT INTO usuario (id, nombre, apellido, correo, contraseña, numero_celular,
         fecha_de_inicio, id_tipo) VALUES (?,?,?,?,?,?,?)`;
     
-    mysqlConnection.query(nuevoEstudiante, estudiantes, (err, results, fiedls) => {
+    mysqlConnection.query(nuevoUsuario, usuario, (err, results, fiedls) => {
         if(err){
             return console.error(err.message);
         }else{
@@ -58,7 +58,7 @@ router.delete('/usuario/:id', (req,res) => {
     const { id } = req.params;
     mysqlConnection.query(`DELETE FROM usuario WHERE id =?`,[id],(err,rows,fields) => {
       if("!err"){
-        res.json({status: `El usaurio ha sido eliminado`})
+        res.json({status: `El usuario ha sido eliminado`})
       }else{
         console.log(err);
       }

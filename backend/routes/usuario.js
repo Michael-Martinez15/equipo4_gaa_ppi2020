@@ -45,7 +45,7 @@ router.put('/usuario/:id', (req, res) =>{
                            fecha_de_inicio=?, id_tipo=? WHERE id=?`,
         [nombre, apellido, correo, contraseña, numero_celular,
         fecha_de_inicio, id_tipo, id], (err, rows, fiedls)=>{
-            if(!error){
+            if(!err){
                 res.json({status:'Usuario actualizado'})
             }else{
                 console.log(err.message);

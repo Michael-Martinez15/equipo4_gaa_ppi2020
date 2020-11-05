@@ -15,9 +15,10 @@ router.get('/recordatorio', (req, res) => {
     })
 });
 
+//HOLAAAA
 //Metodo POST
 router.post('/recordatorio', (req, res) => {
-    const{id, hora, fecha, id_calendario} = req.body;
+    const{id, hora, fecha, id_calendari} = req.body;
 
     let recordatorio = [id, hora, fecha, id_calendario];
     

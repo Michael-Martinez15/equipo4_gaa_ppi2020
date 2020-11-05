@@ -2,6 +2,38 @@ const express = require('express');
 const router = express.Router();
 const mysqlConnection = require('../db/db');
 
+//Metodo GET
+router.get('/calificacion', (req, res) => {
+  mysqlConnection.query('SELECT * FROM calificacion', (err, rows, fiedls) => {
+      //Si no hay error
+   if(!err){ 
+      //Verdadero
+     res.json(rows);
+  }else{
+     console.log(err);
+  }
+  })
+});
+
+//Metodo POST
+router.post('/calificacion', (req, res) => {
+  const{sugerencias,calificacion,id_usuario} = req.body;
+  let Calificacion = [sugerencias,calificacion,id_usuario];
+  let nuevoCalificacion = `INSERT INTO calificacion (sugerencias,calificacion,id_usuario) VALUES (?,?,?)`;
+  
+  
+  mysqlConnection.query(nuevoCalificacion, Calificacion, (err, results, fiedls) => {
+      if(err){
+          return console.error(err.message);
+      }else{
+          res.json({message:'Calificacion Ingresada'});
+      }
+ });
+});
+
+
+ 
+
 
 
 module.exports = router;

@@ -1,12 +1,12 @@
 const express = require('express');
 const app = express();
-const calendario = require('./routes/calendario');
-const calificacion = require('./routes/calificacion');
-const control_mensual = require('./routes/control_mensual');
-const obstetra = require('./routes/obstetra');
-const recordatorio = require('./routes/recordatorio');
-const tipo = require('./routes/tipo');
-const usuario = require('./routes/usuario');
+const calendario = require('./routes/calendario.js');
+const calificacion = require('./routes/calificacion.js');
+const control_mensual = require('./routes/control_mensual.js');
+const obstetra = require('./routes/obstetra.js');
+const recordatorio = require('./routes/recordatorio.js');
+const tipo = require('./routes/tipo.js');
+const usuario = require('./routes/usuario.js');
 
 //Ajustes
 app.set('port', 3000);

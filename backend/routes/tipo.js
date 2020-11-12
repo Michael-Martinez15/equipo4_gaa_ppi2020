@@ -1,7 +1,6 @@
-const express = require("express");
-const router = express.Router();
-const mysqlConnection = require("../db/db");
-
+const {Router} = require('express');
+const router = Router();
+const mysqlConnection = require('../db/db');
 //Metodo GET
 router.get("/tipo", (req, res) => {
   mysqlConnection.query("SELECT * FROM tipo", (err, rows, fiedls) => {

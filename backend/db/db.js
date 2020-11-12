@@ -13,12 +13,12 @@ mysqlConnection.connect(function(err) {
         //Si hay un error entonces
     if(err){
         //Verdadero
-     console.error(err);
-     return;
+     console.log(err);
         //Si no
-    }else{}
+    }else{
         //Todo está bien (falso)
      console.log('Base de datos conectada');
+    }
 });//Fin si err
 
 module.exports = mysqlConnection;

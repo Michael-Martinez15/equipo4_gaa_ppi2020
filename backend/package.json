@@ -4,16 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js"
+    "dev": "nodemon index.js",
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "PPI - Equipo 4",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
-    "mysql": "^2.18.1",
-    "nodemon": "2.0.6",
-    "path": "0.12.7"
+    "mysql": "^2.18.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.6"

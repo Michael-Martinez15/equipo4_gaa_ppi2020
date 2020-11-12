@@ -1,7 +1,6 @@
-const express = require('express');
-const router = express.Router();
+const {Router} = require('express');
+const router = Router();
 const mysqlConnection = require('../db/db');
-
 
 //Metodo GET
 router.get('/calendario', (req, res) => {

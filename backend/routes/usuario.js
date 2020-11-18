@@ -2,7 +2,8 @@ const {Router} = require('express');
 const router = Router();
 const mysqlConnection = require('../db/db');
 
-//Metodo GET
+
+//Metodo GET - Permite mostrar los usuarios
 router.get('/usuario', (req, res) => {
     mysqlConnection.query('SELECT * FROM usuario', (err, rows, fiedls) => {
         //Si no hay error
@@ -15,16 +16,16 @@ router.get('/usuario', (req, res) => {
     })
 });
 
-//Metodo POST
+//Metodo POST - Permite enviar un usuario
 router.post('/usuario', (req, res) => {
-    const{id, nombre, apellido, correo, contraseña, numero_celular,
-        fecha_de_inicio, id_tipo} = req.body;
+    const{id, nombre, apellido, correo, contrasena, numero_celular,
+        fecha_embarazo, id_tipo_usuario} = req.body;
 
-    let usuario = [id, nombre, apellido, correo, contraseña, numero_celular,
-        fecha_de_inicio, id_tipo];
+    let usuario = [id, nombre, apellido, correo, contrasena, numero_celular,
+        fecha_embarazo, id_tipo_usuario];
     
-    let nuevoUsuario = `INSERT INTO usuario (id, nombre, apellido, correo, contraseña, numero_celular,
-        fecha_de_inicio, id_tipo) VALUES (?,?,?,?,?,?,?)`;
+    let nuevoUsuario = `INSERT INTO usuario (id, nombre, apellido, correo, contrasena, numero_celular,
+        fecha_embarazo, id_tipo_usuario) VALUES (?,?,?,?,?,?,?,?);`
     
     mysqlConnection.query(nuevoUsuario, usuario, (err, results, fiedls) => {
         if(err){
@@ -35,16 +36,16 @@ router.post('/usuario', (req, res) => {
    });
 });
 
-//Metodo PUT
+//Metodo PUT - Permite actualizar un usuario por medio del id
 router.put('/usuario/:id', (req, res) =>{
-    const{nombre, apellido, correo, contraseña, numero_celular,
-        fecha_de_inicio, id_tipo} = req.body;
+    const{nombre, apellido, correo, contrasena, numero_celular,
+        fecha_embarazo, id_tipo_usuario} = req.body;
     
     const {id} = req.body;
-    mysqlConnection.query(`UPDATE usuario SET nombre=?, apellido=?, correo=?, contaseña=?, numero_celular=?,
-                           fecha_de_inicio=?, id_tipo=? WHERE id=?`,
-        [nombre, apellido, correo, contraseña, numero_celular,
-        fecha_de_inicio, id_tipo, id], (err, rows, fiedls)=>{
+    mysqlConnection.query(`UPDATE usuario SET nombre=?, apellido=?, correo=?, contrasena=?, numero_celular=?,
+                           fecha_embarazo=?, id_tipo_usuario=? WHERE id=?`,
+        [nombre, apellido, correo, contrasena, numero_celular,
+        fecha_embarazo, id_tipo_usuario, id], (err, rows, fiedls)=>{
             if(!err){
                 res.json({status:'Usuario actualizado'})
             }else{
@@ -53,7 +54,7 @@ router.put('/usuario/:id', (req, res) =>{
         });
 });
 
-//Metodo DELETE
+//Metodo DELETE - Permite eliminar el usuario por medio del id
 router.delete('/usuario/:id', (req,res) => {
     const { id } = req.params;
     mysqlConnection.query(`DELETE FROM usuario WHERE id =?`,[id],(err,rows,fields) => {

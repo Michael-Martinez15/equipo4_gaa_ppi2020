@@ -3,7 +3,7 @@ const router = Router();
 const mysqlConnection = require('../db/db');
 
 
-//Metodo GET
+//Metodo GET - Permite mostrar los controles mensuales
 router.get('/control_mensual',(req,res)=>{
    mysqlConnection.query('SELECT * FROM control_mensual',
     (err,rows,fields)=>{
@@ -16,10 +16,11 @@ router.get('/control_mensual',(req,res)=>{
     })
 }) 
 
-//Metodo POST
+//Metodo POST - Permite enviar un control mensual
 router.post('/control_mensual', (req, res) => {
-    const {id,peso,descripción,observacion,id_obstetra} = req.body
-    let control = [id,peso,descripción,observacion,id_obstetra];
+    const {id, peso, descripcion, observacion, id_obstetra} = req.body
+    
+    let control = [id, peso, descripcion, observacion, id_obstetra];
     let nuevoControl = `INSERT INTO control_mensual VALUES (?,?,?,?,?);`
 
     mysqlConnection.query(nuevoControl,control, (err,results,fields) => {
@@ -30,15 +31,15 @@ router.post('/control_mensual', (req, res) => {
    });
 });
   
-//Metodo PUT
+//Metodo PUT - Permite actualizar el control mensual por medio del id
   router.put('/control_mensual/:id', (req,res) => {
-  const {peso,descripción,observacion,id_obstetra} = req.body
+  const {peso, descripcion, observacion, id_obstetra} = req.body
   const { id } = req.params 
 
 mysqlConnection.query(`UPDATE control_mensual
-                       SET peso= ?,descripción= ?,observacion= ?,id_obstetra = ? 
+                       SET peso= ?, descripcion = ?, observacion= ?, id_obstetra = ? 
                        WHERE id = ?`,
-                       [peso,descripción,observacion,id_obstetra,id], (err, rows,fields) => {
+                       [peso, descripcion, observacion, id_obstetra, id], (err, rows,fields) => {
    if(!err){
     res.json({status: `El control ha sido actualizado con éxito`});
    }else{
@@ -47,7 +48,7 @@ mysqlConnection.query(`UPDATE control_mensual
 });
 });
 
-//Metodo DELETE
+//Metodo DELETE - Permite eliminar el control mensual por medio del id
   router.delete('/control_mensual/:id', (req,res) => {
     const { id } = req.params;
     mysqlConnection.query(`DELETE FROM control_mensual WHERE id =?`,[id],(err,rows,fields) => {

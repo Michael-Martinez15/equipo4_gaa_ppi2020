@@ -1,9 +1,11 @@
 const {Router} = require('express');
 const router = Router();
 const mysqlConnection = require('../db/db');
-//Metodo GET
-router.get("/tipo", (req, res) => {
-  mysqlConnection.query("SELECT * FROM tipo", (err, rows, fiedls) => {
+
+
+//Metodo GET - Permite mostrar el tipo usuario
+router.get("/tipo_usuario", (req, res) => {
+  mysqlConnection.query("SELECT * FROM tipo_usuario", (err, rows, fiedls) => {
     //Si no hay error
     if (!err) {
       //Verdadero
@@ -14,34 +16,34 @@ router.get("/tipo", (req, res) => {
   });
 });
 
-//Metodo POST
-router.post("/tipo", (req, res) => {
+//Metodo POST - Permite enviar un nuevo tipo usuario 
+router.post("/tipo_usuario", (req, res) => {
   const { id, nombre, descripcion } = req.body;
 
-  let tipo = [id, nombre, descripcion];
+  let tipo_usuario = [id, nombre, descripcion];
 
-  let nuevoTipo = `INSERT INTO tipo (id,nombre,descripcion) VALUES (?,?,?)`;
+  let nuevoTipo_usuario = `INSERT INTO tipo_usuario (id, nombre, descripcion) VALUES (?,?,?);`
 
-  mysqlConnection.query(nuevoTipo, tipo, (err, results, fiedls) => {
+  mysqlConnection.query(nuevoTipo_usuario, tipo_usuario, (err, results, fiedls) => {
     if (err) {
       return console.error(err.message);
     } else {
-      res.json({ message: "Tipo Ingresado" });
+      res.json({ message: "tipo_usuario Ingresado" });
     }
   });
 });
 
-//Metodo PUT
-router.put("/tipo/:id", (req, res) => {
+//Metodo PUT  - Permite actualizar el tipo usuario  por medio del id
+router.put("/tipo_usuario/:id", (req, res) => {
   const { nombre, descripcion } = req.body;
 
-  const { id } = req.body;
+  const { id } = req.params;
   mysqlConnection.query(
-    `UPDATE tipo SET nombre=?, descripcion=?,  WHERE id=?`,
+    `UPDATE tipo_usuario SET nombre=?, descripcion=? WHERE id=?`,
     [nombre, descripcion, id],
     (err, rows, fiedls) => {
       if (!err) {
-        res.json({ status: "Tipo actualizado" });
+        res.json({ status: "tipo_usuario actualizado" });
       } else {
         console.log(err.message);
       } //Fin si
@@ -49,15 +51,16 @@ router.put("/tipo/:id", (req, res) => {
   );
 });
 
-//Metodo DELETE
-router.delete("/tipo/:id", (req, res) => {
+//Metodo DELETE - Permite eliminar el tipo usuario  por medio del id
+router.delete("/tipo_usuario/:id", (req, res) => {
   const { id } = req.params;
+  
   mysqlConnection.query(
-    `DELETE FROM tipo WHERE id =?`,
+    `DELETE FROM tipo_usuario WHERE id =?`,
     [id],
     (err, rows, fields) => {
       if ("!err") {
-        res.json({ status: `El Tipo ha sido eliminado` });
+        res.json({ status: `El tipo_usuario ha sido eliminado` });
       } else {
         console.log(err);
       }

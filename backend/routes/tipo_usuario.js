@@ -14,9 +14,9 @@ router.get("/tipo_usuario", (req, res) => {
       console.log(err);
     }
   });
-});
+}); 
 
-//Metodo POST - Permite enviar un nuevo tipo usuario 
+//Metodo POST - Permite enviar un nuevo tipo usuario
 router.post("/tipo_usuario", (req, res) => {
   const { id, nombre, descripcion } = req.body;
 
